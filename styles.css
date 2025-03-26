@@ -1,0 +1,129 @@
+/* Einheitliche Farben & Stile */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Hintergrund */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #1a1a1a, #2c2c2c);
+    color: white;
+}
+
+/* Upload-Box */
+.upload-box {
+    background: rgba(34, 34, 34, 0.9);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.6);
+    text-align: center;
+    width: 400px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Überschrift */
+.upload-box h1 {
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+/* Datei-Input */
+input[type="file"] {
+    display: none;
+}
+
+.custom-file-upload {
+    display: inline-block;
+    background: #333;
+    color: #fff;
+    padding: 14px 24px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: bold;
+    border: 1px solid #555;
+}
+
+.custom-file-upload:hover {
+    background: #555;
+}
+
+/* Upload-Button */
+button {
+    background: #444;
+    color: #fff;
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+    width: 100%;
+}
+
+button:hover {
+    background: #666;
+}
+
+/* Datei-Name */
+#fileName {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #bbb;
+}
+
+/* Fortschrittsbalken */
+.progress-container {
+    width: 100%;
+    background: #222;
+    border-radius: 10px;
+    margin-top: 15px;
+    overflow: hidden;
+    height: 25px;
+    border: 1px solid #444;
+}
+
+.progress-bar {
+    width: 0%;
+    height: 100%;
+    background: #4caf50;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    line-height: 25px;
+    transition: width 0.3s ease-in-out;
+}
+
+/* Status */
+#status {
+    margin-top: 15px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #ddd;
+}
+
+/* Download-Link -> Einheitlich im Stil */
+#status a {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    display: inline-block;
+    background: #444;
+    transition: 0.3s;
+}
+
+#status a:hover {
+    background: #666;
+}
